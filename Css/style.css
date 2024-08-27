@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    
+    font-family: "Poppins", sans-serif;   
 }
-
 
 body{
     background-image: url("pexels-felixmittermeier-1146134.jpg");
@@ -41,6 +38,8 @@ h1{
     width: 100%;
     height: 50px;
     margin: 30px 0;
+    display: flex;
+    align-items: center;
 }
 
 .input-cadastro input{
@@ -53,27 +52,31 @@ h1{
     border-radius: 10px;
     font-size: 16px;
     color: #fff;
-    padding: 5px;
+    padding: 10px 40px 10px 10px;
 }
 
 .input-cadastro input::placeholder{
     color: #fff;
 }
 
-.input-cadastro img{
+.input-cadastro .bi{
     position: absolute;
-    right: 24px;
-    top: 20%;
+    right: 15px;
     margin-top: 5px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.input-cadastro a{
+.forgot-password{
+    display: block;
     font-size: 16px;
     color: #ffffff;
-    text-decoration: none;  
+    text-decoration: none;
+    margin-top: -25px;
+    margin-bottom: 20px;
 }
 
-.input-cadastro a:hover{
+.forgot-password:hover{
     color: purple;
     text-decoration: underline;
 }
